@@ -1,0 +1,35 @@
+using System;
+					
+public class Veiculo{
+	
+      public int numerochassi;
+	  public  String modelo;
+	  public int numerodaplaca;
+      public String fabricante;	
+	  public int anodefabricação;
+	  public string cordoveiculo; 
+		}
+  public class program {
+  
+    public static void Main(){
+      Veiculo veiculo1 = new Veiculo();
+		
+		veiculo1.numerochassi(20120);
+		veiculo1.modelo(mobi);
+		veiculo1.numerodaplaca(3067);
+		vaiculo1.frabricante(fiet);
+		veiculo1.anodefabricação(2017);
+		veiculo1.cordoveiculo(red);
+		
+		Console.WriteLine(veiculo1.numerochassi);
+		Console.WriteLine(veiculo1.modelo);
+		Console.WriteLine(veiculo1.numerodaplaca);
+		Console.WriteLine(veiculo1.frabricante);
+		Console.WriteLine(veiculo1.anodefabricação);
+		Console.WriteLine(veiculo1.cordoveiculo);
+	}	
+		
+	}
+	  }
+	  
+		  
