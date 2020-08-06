@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Document</title>
+</head>
+<body>
+<script>
+ //javascript
+ //exe.1
+ var endereco = {
+        rua: 'Rua dos pinheiros',  numero: 1293,bairro: 'Centro',cidade: 'São Paulo', uf: 'SP'
+    };
+    function exe1(endereco) {
+        return('O usuário mora em '+ endereco.cidade+' / '+ endereco.uf + ', no bairro ' + endereco.bairro + ', na rua "' + endereco.rua + '" com nº ' + endereco.numero);
+    }
+//exe.2
+var contador = 1;
+        function pares(x, y) {
+        for (var i = x; i <= y; i++) {
+            if (i % 2 == 0) {
+                console.log(i);
+                contador++;
+            };
+        };
+    };
+    pares(51, 61);
+    console.log('Foram impressos '+ contador +' números pares.');
+//exe.3
+    function temHabilidade(skills) {
+        if (skills.indexOf('Javascript') >= 0) {
+            return true;
+        };
+    };
+    
+    var skills = ['Javascript', 'ReactJS', 'React Native'];
+    
+    if (temHabilidade(skills)) {
+        console.log('true')
+    }else{
+        console.log('false');
+    }
+//exe.4
+function experiencia(anos) {
+        if (anos <= 1) return 'Iniciante';
+        if (anos > 1 && anos <= 3) return 'Intermediário';
+        if (anos > 3 && anos <= 6) return 'Avançado';
+        if (anos > 6) return 'Jedi Master';    
+    };
+    var anosEstudo = 7;
+    console.log(experiencia(anosEstudo));
+   // exe.5
+   var usuarios = [
+        {
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", ]
+        },
+        {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+    ];
+    
+    function candidato(array){
+        for (var value of array) {
+            console.log('O', value.nome, 'possui as habilidades: ', value.habilidades.join(', '));
+        }
+    }
+    candidato(usuarios);
+</script>
+</body>
+</html>
